@@ -252,6 +252,9 @@ $ git clone https://github.com/Jaspervimm/TIC-TAC-TOE-GAME.git
 # Mine kausta
 $ cd TIC-TAC-TOE-GAME
 
+# Tee docker image nimega &quot;node&quot;
+$ docker image build -t node:latest .
+
 # Jooksuta dockerfail
 $ docker run -d -p 8088:3000 --name node node
 

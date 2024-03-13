@@ -26,3 +26,27 @@ $ npm start
 
 ## :mailbox: Contact
   - <a target="_blank" href="mailto:ucefhammadi@gmail.com">E-mail</a>
+
+## Rakenduse tööle panemine Dockeriga
+```
+Alustuseks käivita Docker oma arvutis.
+
+Rakenduse tööle panemiseks kasutada järgmisi koode:
+
+# Klooni repositoorium
+$ git clone https://github.com/Jaspervimm/TIC-TAC-TOE-GAME.git
+
+# Mine kausta
+$ cd TIC-TAC-TOE-GAME
+
+# Jooksuta dockerfail
+$ docker run -d -p 8088:3000 --name node node
+
+Ava brauseris: http://localhost:8088
+
+# Dockeri peatamiseks
+$ docker stop node
+
+
+Probleemid, millega kokku puutusin olid peamiselt seotud Dockeri mõistmisega, nagu näiteks uue konteineri alustamine powershellis ja "docker image build" töötamine. 
+```
